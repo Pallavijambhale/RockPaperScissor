@@ -1,0 +1,125 @@
+body{
+    background: #16193C !important;
+}
+
+.container{
+    /* background: radial-gradient(circle at 100%, #1F3253, #333 50%, #eee 75%, #333 75%); */
+    background: radial-gradient(hsl(214, 47%, 23%) to hsl(237, 49%, 15%)) !important;
+    /* padding-top: 30px; */
+    padding-bottom: 60px;
+}
+.header-box {
+    padding: 30px 300px;
+}
+
+
+.score-box {
+    border: 2px solid #50647F;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+}
+
+.score-board {
+    padding: 10px 0px;
+    border-radius: 5px;;
+    background: #FAFAFA;
+}
+
+h1{
+    font-family: Barlow Semi Condensed;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    text-align: left;
+    color:#FAFAFA;
+    padding-right: 20px;
+    
+}
+
+h5{
+    font-family: Barlow Semi Condensed;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4.modal-title {
+    font-family: Barlow Semi Condensed;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #424660;
+}
+
+p{
+    font-family: Barlow Semi Condensed;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    text-align: center;
+}
+
+
+.choice-picker{
+    margin-top: 4em;
+}
+
+.paper-style{
+    position: absolute;
+    left: 28em;
+    top: 12em;
+    background: white;
+    padding: 30px;
+    border: 10px solid #577BF4;
+    border-radius:50% ;
+}
+
+.scissor-style{
+    position: absolute;
+    left: 46em;
+    top: 12em;
+    background: white;
+    padding: 30px;
+    border: 10px solid #EEA93B;
+    border-radius:50% ;
+}
+
+.rock-style{
+    position: absolute;
+    left: 36em;
+    top: 26em;
+    background: white;
+    padding: 30px;
+    border: 10px solid #E1475D;
+    border-radius:50%;
+    /* box-shadow: inset(1px 1px 10px 10px lightgray); */
+}
+
+.btn-rule{
+    font-family: Barlow Semi Condensed;
+    border: 2px solid #50647F !important;
+    border-radius: 5px;
+    padding: 4px 25px !important;
+    text-transform: uppercase;
+    color: white !important;
+    position: absolute;
+    right: 36px;
+    bottom: 1em;
+}
+
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+.modal-content {
+    width: 80% !important;
+    margin: 4em auto !important;
+}
+
+svg.rules{
+    position: relative;
+    left: 26px;
+    bottom: 0;
+}
