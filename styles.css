@@ -1,5 +1,6 @@
 body{
     background: #16193C !important;
+    font-family: 'Barlow semi condensed', sans-serif;
 }
 
 .container{
@@ -8,8 +9,25 @@ body{
     /* padding-top: 30px; */
     padding-bottom: 60px;
 }
+
+.h-auto{
+    height: auto;
+}
+
+
+.choose {
+    border: none;
+    padding: 50px;
+    background: transparent;
+}
+
+.choose:hover, .choose:active{
+    border: none !important;
+    background: transparent !important;
+}
 .header-box {
-    padding: 30px 300px;
+    width: 58vw;
+    margin-top: 4vw;
 }
 
 
@@ -17,7 +35,7 @@ body{
     border: 2px solid #50647F;
     border-radius: 5px;
     display: flex;
-    padding: 10px;
+    padding: 20px;
 }
 
 .score-board {
@@ -26,78 +44,101 @@ body{
     background: #FAFAFA;
 }
 
+
+.step-2{
+    margin-top:3vw;
+}
 h1{
-    font-family: Barlow Semi Condensed;
-    font-size: 24px !important;
+    font-family: 'Barlow semi condensed', sans-serif;
+    font-size: 45px !important;
     font-weight: 600 !important;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color:#FAFAFA;
-    padding-right: 20px;
-    
+    margin-top: 14vw !important;
+}
+
+h2 {
+    font-family: 'Barlow semi condensed', sans-serif;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 }
 
 h5{
-    font-family: Barlow Semi Condensed;
+    font-family: 'Barlow semi condensed', sans-serif;    /* score heading */
     font-size: 20px !important;
     font-weight: 600 !important;
     text-transform: uppercase;
     text-align: center;
+    color:#6467BD;
 }
 
 h4.modal-title {
-    font-family: Barlow Semi Condensed;
+    font-family: 'Barlow semi condensed', sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     color: #424660;
 }
 
-p{
-    font-family: Barlow Semi Condensed;
-    font-size: 20px !important;
+p{                                          /* score*/
+    font-family: 'Barlow semi condensed', sans-serif;
+    font-size: 24px !important;
     font-weight: 600 !important;
     text-align: center;
+    color: #545168;
 }
 
 
 .choice-picker{
-    margin-top: 4em;
+    margin-top: 10vw;
 }
 
-.paper-style{
+.paper{
     position: absolute;
-    left: 28em;
-    top: 12em;
-    background: white;
-    padding: 30px;
-    border: 10px solid #577BF4;
+    left: 36vw;
+    top: 20vw;
+    background: #DFDFDE;
+    background-image: url(img/icon-paper.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+    width:10vw;
+    border: 14px solid #577BF4;
     border-radius:50% ;
+    box-shadow: inset 0px 6px 0px 0px #BEC3CF, 0px 7px 0px 0 #325EBE;
 }
 
-.scissor-style{
+.scissor{
     position: absolute;
-    left: 46em;
-    top: 12em;
-    background: white;
-    padding: 30px;
-    border: 10px solid #EEA93B;
+    left: 54vw;
+    top: 20vw;
+    background: #DFDFDE;
+    background-image: url(img/icon-scissors.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+    border: 14px solid #EEA93B;
     border-radius:50% ;
+    box-shadow: inset 0px 6px 0px 0px #B9BED2, 0px 7px 0px 0 #C66D29;
 }
 
-.rock-style{
+.rock{
     position: absolute;
-    left: 36em;
-    top: 26em;
-    background: white;
-    padding: 30px;
-    border: 10px solid #E1475D;
+    left: 45vw;
+    top: 36vw;
+    background: #DFDFDE;
+    background-image: url(img/icon-rock.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+    border: 14px solid #E1475D;
     border-radius:50%;
-    /* box-shadow: inset(1px 1px 10px 10px lightgray); */
+    box-shadow: inset 0px 6px 0px 0px #B9BED2, 0px 7px 0px 0 #9F2D36;
 }
 
 .btn-rule{
-    font-family: Barlow Semi Condensed;
+    font-family: 'Barlow semi condensed', sans-serif;
     border: 2px solid #50647F !important;
     border-radius: 5px;
     padding: 4px 25px !important;
@@ -105,9 +146,38 @@ p{
     color: white !important;
     position: absolute;
     right: 36px;
-    bottom: 1em;
+    bottom: 1vw;
 }
 
+button#userchoice, button#compchoice {
+    position: absolute;
+    top: 8vw;
+    left: 8vw;
+    padding: 80px;
+}
+
+
+#user:hover,#user:active{
+    border:none !important;
+    background: none;
+}
+button.play-again {
+    font-family: 'Barlow semi condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #D74863;
+    background: white;
+    padding: 8px 42px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+}
+
+button.play-again:hover {
+    border: none !important;
+    transform: scale(1.1);
+}
 
 .modal-header{
     border-bottom: none !important;
@@ -118,8 +188,12 @@ p{
     margin: 4em auto !important;
 }
 
-svg.rules{
+.rule-img{
     position: relative;
     left: 26px;
     bottom: 0;
+}
+
+.cls-hide{
+    display: none !important;
 }
