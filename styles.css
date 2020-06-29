@@ -105,7 +105,7 @@ p{                                          /* score*/
     background-image: url(img/icon-paper.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; 
-    width:10vw;
+    /* width:10vw; */
     border: 14px solid #577BF4;
     border-radius:50% ;
     box-shadow: inset 0px 6px 0px 0px #BEC3CF, 0px 7px 0px 0 #325EBE;
@@ -196,4 +196,61 @@ button.play-again:hover {
 
 .cls-hide{
     display: none !important;
+}
+
+
+@media(max-width:1024px){
+
+    img.bg-triangle {
+        width: 60vw;
+        margin-top: 10vw;
+    }
+
+    .paper {
+        left: 19vw;
+        top: 37vw;
+        /* width: 18vw; */
+    }
+
+    .scissor {
+        left: 67vw;
+        top: 37vw;
+    }
+
+    .rock
+    {
+        left: 42vw;
+        top: 81vw;
+    }
+}
+
+
+@media(max-width:375px){
+    .header-box {
+        width: 90vw;
+    }
+
+    .score-board{
+        padding: 10px;
+    }
+
+    img.bg-triangle {
+        width: 75vw;
+        margin-top: 30vw;
+    }
+
+    .paper {
+        left: 5vw;
+        top: 68vw;
+    }
+
+    .scissor {
+        left: 63vw;
+        top: 68vw;
+    }
+
+    .rock {
+        left: 33vw;
+        top: 120vw;
+    }
 }

@@ -62,15 +62,11 @@ $(document).ready(function(){
         }
     }
 
-    function calculateScore(){
-        
-        
-    }
-
-
     function playagain(){
         $('.step-2').addClass('cls-hide');
         $('.choice-picker').removeClass('cls-hide');
+        $('#userchoice').removeClass();
+        $('#compchoice').removeClass();
     }
 
     $('.play-again').click(function(){
